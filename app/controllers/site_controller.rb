@@ -4,6 +4,10 @@ class SiteController < ApplicationController
 		@contacts = Contact.all
 	end
 
+	def search
+		render 
+	end
+
 	def create
 	end
 

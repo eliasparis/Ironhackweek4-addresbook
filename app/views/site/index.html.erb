@@ -1,7 +1,14 @@
 <h1> My contact web app</h1>
 
-<ul>
+<p>
+	<%= form_tag("/", method: "get") do %>
+  		<%= label_tag(:letter, "Search for:") %>
+  		<%= text_field_tag(:letter) %>
+  		<%= submit_tag("Search") %>
+	<% end %>
+</p>
+<!-- <ul>
 	<% @contacts.each do |contact| %>
 	<li><a href='/<%= contact.id %>' ><%= contact.name %></li>
 	<% end %>
-</ul>
+</ul> -->
